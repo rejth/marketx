@@ -16,13 +16,13 @@
   ], // Turn on the plugins and peer plugins
   "extends": [
     "airbnb", // Use the recommended rules from @eslint-config-airbnb
-    "airbnb-typescript", // Extends prevouos rules by rules from @eslint-config-airbnb-typescript
-    "plugin:react/recommended", // Extends prevouos rules by rules from @eslint-plugin-react
+    "airbnb-typescript", // Extends previous rules by rules from @eslint-config-airbnb-typescript
+    "plugin:react/recommended", // Extends previous rules by rules from @eslint-plugin-react
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended", // Extends prevouos rules by rules from @typescript-eslint/eslint-plugin
-    "prettier", // Extends prevouos rules by rules from @eslint-plugin-prettier
-    "plugin:jest/recommended", // Extends prevouos rules by recommended rules from @eslint-plugin-jest
-    "plugin:jest-dom/recommended" // Extends prevouos rules by recommended rules from @eslint-plugin-jest-dom
+    "plugin:@typescript-eslint/recommended", // Extends previous rules by rules from @typescript-eslint/eslint-plugin
+    "prettier", // Extends previous rules by rules from @eslint-plugin-prettier
+    "plugin:jest/recommended", // Extends previous rules by recommended rules from @eslint-plugin-jest
+    "plugin:jest-dom/recommended" // Extends previous rules by recommended rules from @eslint-plugin-jest-dom
   ],
   "parser": "@typescript-eslint/parser", // Specifies the ESLint parser
   "parserOptions": {
