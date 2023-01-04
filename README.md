@@ -29,8 +29,8 @@ Prerequisites:
 To set up the app execute the following commands.
 
 ```bash
-git clone ...
-cd ...
+git clone https://github.com/rejth/marketx.git
+cd marketx
 pnpm install
 ```
 
