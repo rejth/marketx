@@ -1,8 +1,8 @@
 import React, { memo, Suspense, useCallback } from 'react';
 import { Route, RouteProps, Routes } from 'react-router-dom';
 
-import { routeConfig } from 'shared/config';
 import { PageLoader } from 'widgets/PageLoader';
+import { routes } from '../routes';
 
 function AppRouter() {
   const renderWithWrapper = useCallback((route: RouteProps) => {
@@ -10,7 +10,7 @@ function AppRouter() {
     return <Route key={route.path} path={route.path} element={element} />;
   }, []);
 
-  return <Routes>{Object.values(routeConfig).map(renderWithWrapper)}</Routes>;
+  return <Routes>{Object.values(routes).map(renderWithWrapper)}</Routes>;
 }
 
 const memorizedAppRouter = memo(AppRouter);
