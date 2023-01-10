@@ -4,6 +4,7 @@ import { classNames } from 'shared/lib';
 import cls from './Card.module.scss';
 
 export function Card() {
+  const isActive = true;
   return (
     <div className={cls.Card}>
       <div
@@ -29,22 +30,24 @@ export function Card() {
         <button
           type="button"
           aria-label="Add to wish list"
-          className={classNames(cls.card_button, { [cls.active]: false }, ['add_to_wishlist_btn'])}
+          className={classNames(cls.card_button, { [cls.active]: isActive }, [
+            'add_to_wishlist_btn',
+          ])}
           onClick={() => {}}
         >
-          <i className="bi bi-heart" />
-          <i className="bi bi-heart-fill" />
+          {!isActive && <i className={classNames(cls.bi, {}, ['bi-heart'])} />}
+          {isActive && <i className={classNames(cls.bi, {}, ['bi-heart-fill'])} />}
           Wishlist
         </button>
         <div className={cls.buttons_separator} />
         <button
           type="button"
           aria-label="Add to cart"
-          className={classNames(cls.card_button, { [cls.active]: false }, ['add_to_cart_btn'])}
+          className={classNames(cls.card_button, { [cls.active]: isActive }, ['add_to_cart_btn'])}
           onClick={() => {}}
         >
-          <i className="bi bi-cart" />
-          <i className="bi bi-cart-check-fill" />
+          {!isActive && <i className={classNames(cls.bi, {}, ['bi-cart'])} />}
+          {isActive && <i className={classNames(cls.bi, {}, ['bi-cart-check-fill'])} />}
           Cart
         </button>
       </footer>

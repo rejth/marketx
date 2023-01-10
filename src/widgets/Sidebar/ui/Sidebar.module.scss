@@ -4,11 +4,12 @@
   height: 400px;
   padding: 25px;
   box-shadow: 6px 0 18px rgb(0 0 0 / 6%);
+  border-radius: 8px;
   background: var(--white);
 }
 
 .sidebar_title {
-  font-size: 24px;
+  font-size: 28px;
   display: flex;
   align-items: center;
   height: 36px;
@@ -25,10 +26,21 @@
 }
 
 .sidebar_navigation li {
-  font-size: 15px;
-  margin-bottom: 16px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .sidebar_navigation li .bi {
   padding-right: 10px;
+}
+
+.sidebar_navigation a:hover {
+  color: var(--primary-bg);
+}
+
+.link_unstyled,
+.link_unstyled:link,
+.link_unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
 }

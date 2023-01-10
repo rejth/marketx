@@ -1,6 +1,6 @@
 import React from 'react';
 
-import UserIcon from 'shared/assets/user.svg';
+import UserIcon from 'shared/assets/icons/user.svg';
 import cls from './Header.module.scss';
 
 export function Header() {

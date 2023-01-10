@@ -1,35 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { classNames } from 'shared/lib';
 
 import cls from './Sidebar.module.scss';
 
 export function Sidebar() {
   return (
     <aside className={cls.Sidebar}>
-      <h2 className={cls.sidebar_title} data-element="title">
-        <Link className="link-unstyled" to="/">
+      <h2 className={cls.sidebar_title}>
+        <NavLink className={cls.link_unstyled} to="/">
           Market X
-        </Link>
+        </NavLink>
       </h2>
 
       <ul className={cls.sidebar_navigation}>
         <li>
-          <Link to="/" className="link-unstyled">
-            <i className="bi bi-shop" />
+          <NavLink to="/" className={cls.link_unstyled}>
+            <i className={classNames(cls.bi, {}, ['bi-shop'])} />
             <span>Products</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/wishlist" className="link-unstyled">
-            <i className="bi bi-star" />
+          <NavLink to="/wishlist" className={cls.link_unstyled}>
+            <i className={classNames(cls.bi, {}, ['bi-star'])} />
             Wishlist <span>0</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/cart" className="link-unstyled">
-            <i className="bi bi-cart" />
+          <NavLink to="/cart" className={cls.link_unstyled}>
+            <i className={classNames(cls.bi, {}, ['bi-cart'])} />
             Cart <span>0</span>
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </aside>

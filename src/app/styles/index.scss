@@ -4,8 +4,12 @@
 
 .app {
   position: relative;
+
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 20px;
   width: 100%;
   max-width: 1320px;
-  padding: 0 20px;
+  padding: 20px;
   margin: 0 auto;
 }
