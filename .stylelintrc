@@ -41,7 +41,7 @@
     "scss/selector-no-redundant-nesting-selector": true,
     "value-keyword-case": "lower",
     "selector-max-attribute": 1,
-    "selector-max-class": 2,
+    "selector-max-class": 3,
     "comment-no-empty": true,
     "block-no-empty": true,
     "no-empty-first-line": true,

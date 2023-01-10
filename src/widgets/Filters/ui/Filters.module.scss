@@ -1,0 +1,29 @@
+.Filters {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+  padding: 10px 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 13%);
+  background-color: #FFFFFF;
+  border-radius: 8px;
+}
+
+.list_view_controls {
+  font-size: 18px;
+  padding: 10px 0;
+  text-align: right;
+}
+
+.list_view_controls .bi {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.list_view_controls .bi.active {
+  color: var(--primary-bg);
+}
